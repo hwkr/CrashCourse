@@ -1,14 +1,20 @@
-body {
-    margin: 0 auto;
-    padding-top: 12em;
-    padding-top: 30vh;
-    width: 24em;
-    max-width: 100%;
-    color: #333;
+html {  
     background: #f2f2f2;
 }
 
+body {
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+    width: 24em;
+    max-width: 100%;
+}
+
 .card {
+    margin-top: 12em;
+    margin-top: 24vh;
     padding: 1em;
     border: 1px solid #CCC;
     border-bottom-width: 3px;
@@ -99,4 +105,12 @@ body {
 .btn-social.dribbble:hover:active {
     background: #ce4476;
     border-color: #b23c65;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #999;
+    text-align: center;
 }
