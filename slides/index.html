@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic|Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/dz.css" rel="stylesheet"/>
+    <link href="assets/slides.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/dz.js"></script>
+    <title>Crash Course</title>
+</head>
+
+<body>
+
+<!-- Your Slides -->
+<!-- One section is one slide -->
+
+<section>
+    <!-- This is the first slide -->
+    <h1>
+        Crash Course
+        <br>
+        <span>Web Development</span>
+        <br>
+        <small>Go to <a target="blank" href="http://github.com/hwkr/CrashCourse">github.com/hwkr/CrashCourse</a></small>
+    </h1>
+    <footer>
+        Ben Hawker &bull; @bnhwkr
+    </footer>
+</section>
+
+<!-- 
+#==== Hook
+#
+##### Getting 'em hooked
+-->
+
+<!-- <section>
+    <div class="row hcenter vcenter" style="width:100%;">
+        <div class="facade-minimal" data-url=""> 
+            <div class="terminal" data-url="http://localhost:8080/"></div>
+        </div>
+    </div>
+</section> -->
+
+<!-- 
+#==== Contents
+#
+##### The table of contents
+-->
+
+<section>
+    <div class="vcenter">
+        <h3>Stuff to Talk About</h3>
+        <ul id="toc">
+            <!-- Auto populated by script -->
+        </ul>
+    </div>
+</section>
+
+<!-- 
+#==== The Internets
+#
+##### 
+-->
+
+<section class="section-header">
+    <h2 class="vcenter">The Internets</h2>
+    <div role="note">
+        <ul><li></li></ul>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>How did it start?</h3>
+        <p>A long long time ago Bill Gates and Steve Jobs wanted to send dank memes to each other so they created the internet.</p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <iframe width="100%" height="608"
+                src="https://www.youtube.com/embed/21eFwbb48sE?controls=0&disablekb=1&rel=0&start=44&end=369"
+                frameborder="0" class="img-shadow" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>The World Wide Web</h3>
+        <img class="img-contain img-lg" src="assets/WorldWideWeb.svg">
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3 class="abbr"><b>H</b>yper<b>t</b>ext <b>T</b>ransfer <b>P</b>rotocol</h3>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>HTTP Requests</h3>
+        <p><code>GET</code>, <code>POST</code>, ...</p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>An HTTP <code>GET</code> Request</h3>
+        <p><pre>
+<code>GET /CrashCourse/ HTTP/1.1
+Host: hwkr.github.io
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: en-US,en;q=0.8,fr;q=0.6
+If-Modified-Since: Sat, 24 Sep 2016 22:09:53 GMT</code>
+</pre></p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>HTTP Response Codes</h3>
+        <ul class="list-codes">
+            <li><code>200</code> &ndash; OK</li>
+            <li><code>304</code> &ndash; Not Modified</li>
+            <li><code>400</code> &ndash; Bad Request</li>
+            <li><code>404</code> &ndash; Not Found</li>
+            <li><code>500</code> &ndash; Internal Server Error</li>
+        </ul>
+    </div>
+</section>
+
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>Let's try it!</h3>
+        <img class="img-contain" src="assets/DevTools.png">
+    </div>
+</section>
+
+<!-- 
+#==== HTML & CSS
+#
+##### 
+-->
+
+<section class="section-header">
+    <h2 class="vcenter">HTML &amp; CSS</h2>
+    <div role="note">
+        <ul><li></li></ul>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3 class="abbr"><b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage</h3>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>A Basic Webpage</h3>
+        <p><pre>
+<code>&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;title&gt;Hello World&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+    &lt;p&gt;Hello World.&lt;/p&gt;
+&lt;/body&gt; 
+&lt;/html&gt;</code>
+</pre></p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>Pretty lame...</h3>
+        <img class="img-contain img-md" src="assets/Hello.png">
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>HTML Block Elements</h3>
+        <p><code>&lt;div&gt;...&lt;/div&gt;</code>, <code>&lt;p&gt;...&lt;/p&gt;</code>, ...</p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>HTML Inline Elements</h3>
+        <p><code>&lt;a&gt;...&lt;/a&gt;</code>, <code>&lt;em&gt;...&lt;/em&gt;</code>, ...</p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>Self Closing Elements</h3>
+        <p><code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>, ...</p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>Element Attributes</h3>
+        <p><code>&lt;a <em>href=&quot;http://www.google.com/&quot;</em>&gt;Google&lt;/a&gt;</code>
+        </p>
+    </div>
+</section>
+
+
+<section>
+    <div class="hcenter vcenter">
+        <img class="img-contain" src="assets/MDN-Logo.png">
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <img class="img-contain" src="assets/MDN.png">
+    </div>
+</section>
+
+<section class="background-image" style="background: url(assets/ReadAllThis.gif) no-repeat center center / cover">
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <iframe width="100%" height="800"
+                src="https://madebymike.com.au/html5-periodic-table/"
+                frameborder="0" class="img-shadow" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>IDs and Classes</h3>
+        <p><pre>
+<code>&lt;section <em>id=&quot;memes&quot;</em>&gt;
+    &lt;img <em>class=&quot;img-contain img-rounded&quot;</em> src=&quot;assets/dank-memes.png&quot;&gt;
+&lt;/section&gt;</code>
+</pre></p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <iframe width="100%" height="600" scrolling='no' allowtransparency='true'
+                src="//codepen.io/hwkr/embed/ZpKyyb/?height=600&theme-id=0&default-tab=html,result&embed-version=2"
+                frameborder="0" class="img-shadow" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="background-image" style="background: url(assets/CSS.gif) no-repeat center center / cover">
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>CSS uses <em>Selectors</em> and <em>Properties</em></h3>
+        <p><pre>
+<code>h1 {
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 96px;
+    color: #6A3089;
+}</code>
+</pre></p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>Selectors can be combined</h3>
+        <p><pre>
+<code>p.big-text {
+    font-size: 110px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FE4B75;
+}</code>
+</pre></p>
+    </div>
+</section>
+
+<section>
+    <div class="hcenter vcenter">
+        <iframe width="100%" height="600" scrolling='no' allowtransparency='true'
+                src="//codepen.io/hwkr/embed/WGjOgV/?height=600&theme-id=0&default-tab=html,result&embed-version=2"
+                frameborder="0" class="img-shadow" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+<section>
+    <div class="hcenter vcenter">
+        <h3>Let's write some code</h3>
+        <p>Go to <a target="blank" href="http://www.codepen.io/">codepen.io</a></p>
+    </div>
+</section>
+
+<!-- 
+#==== Git & GitHub
+#
+##### 
+-->
+
+<section class="section-header">
+    <h2 class="vcenter">Git and GitHub</h2>
+    <div role="note">
+        <ul><li></li></ul>
+    </div>
+</section>
+
+<!-- 
+#==== Launching a Webpage
+#
+##### 
+-->
+
+<section class="section-header">
+    <h2 class="vcenter">Going Live</h2>
+    <div role="note">
+        <ul><li></li></ul>
+    </div>
+</section>
+
+
+<div id="progress-bar"></div>
+
+<!-- TOC script-->
+<script>
+    $(function ($) {
+        var toc = $('ul#toc')
+        $('.section-header h2').each(function (index, element) {
+            toc.append('<li>' + $(element).text() + '</li>')
+        });
+    });
+</script>
+
+</body>
+</html>
+
