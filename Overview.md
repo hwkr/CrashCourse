@@ -62,5 +62,14 @@ Go to `hwkr.github.io/CrashCourse`. Check out,
   * Self Closing
   * Attributes
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* IDs and Classes
+  * From MDN: "The ID name must be unique in the document."
 
-http://marksheet.io/
+### CSS
+
+* Selectors
+  * Select IDs with `#` and classes with `.`. 
+  * `*` is everything
+  * `a b` is any descendant
+  * `a > b` is a direct child
+* Properties
