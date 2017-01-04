@@ -5,12 +5,16 @@ You can find everything you need for the workshop here.
 * [Demo Webpage](https://hwkr.github.io/CrashCourse/demo/)
 * [Slides](https://hwkr.github.io/CrashCourse/slides/)
 
+## Schedule
+
+* **6:00 - 6:15**: The WebDev Club and Tonight's Plan
+* **6:15 - 6:45**: Intro to WebDev
+* **6:45 - 7:30**: Personal Site Challenge
+* **7:30 - 8:00**: Sharing and Prizes
+
 ## Requirements
 
 * [Google Chrome](https://www.google.com/chrome/)
-* [A GitHub Account](https://github.com/)
-* [A Git Command Line](https://help.github.com/articles/set-up-git/)
-* [Sublime or Notepad++](https://www.sublimetext.com/)
 
 ## Resources
 
